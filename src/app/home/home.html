@@ -24,6 +24,23 @@
                 </div>
             </div>
         </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+                <tr *ngFor="let p of productos">
+                    <td>{{p.nombre}}</td>
+                    <td>{{p.precio}}</td>
+                    <td>{{p.categoria.nombre}}</td>
+                </tr>
+            <tbody>
+
+            </tbody>
+        </table>
     </div>
 </section>
 <!-- Image Showcases-->
